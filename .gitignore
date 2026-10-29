@@ -1,6 +1,7 @@
 # --- Data (never commit) -------------------------------------------------
-# Raw, interim and processed matrices can be large and may be sensitive.
-data/
+# `data/*` rather than `data/` so the negation below can re-include the
+# README - git cannot un-ignore a file inside an ignored *directory*.
+data/*
 !data/README.md
 *.h5ad
 *.h5
