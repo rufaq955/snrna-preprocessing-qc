@@ -8,6 +8,7 @@ filtering, and hands off a clean object to either Scanpy (Python) or Seurat (R).
 Built for multi-sample cohorts where every step needs to be re-runnable,
 logged, and applied identically across samples.
 
+![CI](https://github.com/rufaq955/snrna-preprocessing-qc/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![R](https://img.shields.io/badge/R-4.3%2B-276DC3)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -72,7 +73,7 @@ works but is roughly an order of magnitude slower per sample.
 ## Installation
 
 ```bash
-git clone https://github.com/rufaqullah/snrna-preprocessing-qc.git
+git clone https://github.com/rufaq955/snrna-preprocessing-qc.git
 cd snrna-preprocessing-qc
 
 # Python environment (includes CellBender and ptrepack)
