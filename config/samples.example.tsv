@@ -1,0 +1,15 @@
+﻿# Sample manifest for the snRNA-seq preprocessing pipeline.
+#
+# One row per sample. `name` becomes the output filename stem, so keep it
+# short, unique and free of spaces.
+#
+# `directory` must contain the three canonical 10x files:
+#   matrix.mtx.gz, features.tsv.gz, barcodes.tsv.gz
+#
+# IMPORTANT: do not commit a manifest containing real patient or project
+# identifiers. This file is tracked by git; the real one should live
+# alongside your data and be excluded (see .gitignore).
+name	directory
+sample_01	/data/raw/sample_01/raw_matrix
+sample_02	/data/raw/sample_02/raw_matrix
+sample_03	/data/raw/sample_03/raw_matrix

@@ -1,0 +1,41 @@
+# --- Data (never commit) -------------------------------------------------
+# Raw, interim and processed matrices can be large and may be sensitive.
+data/
+!data/README.md
+*.h5ad
+*.h5
+*.h5seurat
+*.rds
+*.rda
+*.mtx
+*.mtx.gz
+
+# --- Run artefacts -------------------------------------------------------
+logs/
+*.log
+results/
+figures/
+*.png
+*.pdf
+!docs/**/*.png
+
+# --- Environment / editor ------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.cache/
+
+# --- OS ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Local sample manifests (may contain real identifiers) ---------------
+config/samples.tsv
+!config/samples.example.tsv

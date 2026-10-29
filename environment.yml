@@ -1,0 +1,22 @@
+name: snrna-preprocessing-qc
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # Core single-cell stack
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
+  - scanpy>=1.9
+  - anndata>=0.9
+  # HDF5 repacking for the R hand-off (step 03)
+  - pytables>=3.8
+  # Ambient RNA removal (step 02). CUDA build is preferred when a GPU is
+  # available; the CPU build works but is substantially slower.
+  - pytorch>=2.0
+  - cellbender>=0.3.2
+  - pip:
+      - h5py>=3.8

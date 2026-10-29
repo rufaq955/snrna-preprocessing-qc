@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this pipeline in your research, please cite it as below."
+title: "snRNA-seq Preprocessing & QC Pipeline"
+abstract: "A reproducible preprocessing and quality-control pipeline for 10x Genomics single-nucleus RNA-seq data, covering ambient RNA removal with CellBender, doublet detection with DoubletFinder, and cell-level filtering, with hand-off to Scanpy or Seurat."
+version: 1.0.0
+date-released: "2026-10-29"
+license: MIT
+type: software
+authors:
+  - family-names: Ullah
+    given-names: Rufaq
+    email: rufaqullah@genomics.cn
+    affiliation: "BGI Shenzhen"
+keywords:
+  - single-nucleus RNA-seq
+  - snRNA-seq
+  - quality control
+  - ambient RNA
+  - doublet detection
+  - bioinformatics
+  - Scanpy
+  - Seurat
